@@ -1,0 +1,31 @@
+@import '../../MainTheme.scss';
+
+.Navbar{
+    background-color: $foundation-color;
+    height: 100px;
+}
+
+.navOptions{
+    color: white;
+    cursor: pointer;
+}
+.header{
+    width: 25%;
+    margin-bottom: auto;
+    z-index: 1;
+}
+.navTitle{
+    text-align: right;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+
+.opHeader{
+    width: 60%;
+    margin-left: auto;
+    z-index: 1;
+}
+.navOptions:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
