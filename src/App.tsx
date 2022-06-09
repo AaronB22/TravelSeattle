@@ -1,6 +1,7 @@
 import React from 'react';
 import type { FC } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router} from 'react-router-dom'
+import CustomRouter from './CustomRouter';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import NavBarComp from './Components/NavBar/NavBarComp';
@@ -11,6 +12,9 @@ const App: FC=()=>{
     return(
       <>
        <NavBarComp/>
+       <Router>
+          <CustomRouter/>
+       </Router>
       </>
     )
 }

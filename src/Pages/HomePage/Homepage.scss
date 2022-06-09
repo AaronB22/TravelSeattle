@@ -1,0 +1,94 @@
+
+.homeImg{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+}
+.imgBlackout{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    opacity: 30%;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+}
+
+.titleBox{
+    position: relative;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    border: white solid 8px;
+}
+
+.AboutDiv{
+    margin-top: 500px;
+}
+
+.aboutTitle{
+    text-align: center;
+    text-decoration: underline;
+}
+.subTitle{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.aboutCat{
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.aboutCatTitle{
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.aboutPar{
+    font-size: 20px;
+}
+
+.aboutCard{
+    width: 400px;
+    aspect-ratio: 16/9;
+}
+.acTitle{
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    height: 2.1rem;
+    top: 45%;
+    color:white
+}
+
+.bottomRow{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.bottomImgBlackout{
+    position: absolute;
+    width: 400px;
+    aspect-ratio: 16/9;
+    background-color: black;
+    opacity: 40%;
+}
+.bottomAboutImg{
+    position: absolute;
+    width: 400px;
+    aspect-ratio: 16/9;
+}
