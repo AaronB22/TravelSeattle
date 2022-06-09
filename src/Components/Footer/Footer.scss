@@ -1,0 +1,28 @@
+@import '../../MainTheme.scss';
+.Footer{
+    height: 200px;
+    background: $foundation-color;
+}
+
+.footerText{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.footerImg{
+    width: 64px;
+    position: relative;
+    right: 0;
+}
+
+.logoDiv{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pointer{
+    cursor: pointer;
+}

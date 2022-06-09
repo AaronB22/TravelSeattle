@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import './Homepage.scss'
+import Footer from '../../Components/Footer/Footer';
 
 const HomePage:FC=()=>{
 
@@ -72,6 +73,7 @@ const HomePage:FC=()=>{
 
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
