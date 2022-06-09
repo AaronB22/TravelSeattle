@@ -38,3 +38,15 @@
     margin-right: auto;
     font-size: 18px;
 }
+
+@media screen and (max-width:500px) {
+  .travelCard{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width:500px) {
+    .cardImg{
+        width: 140px;
+    }
+  }

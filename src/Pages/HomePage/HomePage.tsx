@@ -56,8 +56,8 @@ const HomePage:FC=()=>{
                         <Col>
                             <div className='aboutCard'>
                                 <img src={require('../../assets/lightrail.jpg')} className='bottomAboutImg'/>
-                                <div className='bottomImgBlackout'></div>
-                                <div className='acTitle'>Travel</div>
+                                <div className='bottomImgBlackout' onClick={()=>window.location.assign('/travel')}></div>
+                                <div className='acTitle' onClick={()=>window.location.assign('/travel')}>Travel</div>
                             </div>
                         
                         </Col>
