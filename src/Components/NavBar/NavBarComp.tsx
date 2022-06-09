@@ -9,7 +9,7 @@ const NavbarComp: FC=()=>{
     return(
         <Navbar expand='lg'  className='Navbar backgroundImgNav'>
             <Navbar.Brand className="header">
-                <FontAwesomeIcon icon={faBars}  className='hamMenu'/>
+                <FontAwesomeIcon icon={faBars}  className='hamMenu fa-2xl'/>
                 <h1 className='navTitle'>
                     Travel Seattle
                 </h1>
