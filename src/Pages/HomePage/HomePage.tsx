@@ -64,8 +64,8 @@ const HomePage:FC=()=>{
                         <Col>
                         <div className='aboutCard'>
                                 <img src={require('../../assets/PikePlaceMarket.jpg')} className='bottomAboutImg'/>
-                                <div className='bottomImgBlackout'></div>
-                                <div className='acTitle'>Sights</div>
+                                <div className='bottomImgBlackout' onClick={()=>window.location.assign('/sights')}></div>
+                                <div className='acTitle' onClick={()=>window.location.assign('/sights')}>Sights</div>
                             </div>
                         
                         </Col>

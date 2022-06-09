@@ -62,6 +62,7 @@
 .aboutCard{
     width: 400px;
     aspect-ratio: 16/9;
+    cursor: pointer;
 }
 .acTitle{
     position: relative;
@@ -92,6 +93,7 @@
     width: 400px;
     aspect-ratio: 16/9;
 }
+
 
 @media screen and (max-width:1650px) {
     .aboutCard{

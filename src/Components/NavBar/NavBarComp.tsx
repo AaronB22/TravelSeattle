@@ -27,7 +27,9 @@ const NavbarComp: FC=()=>{
                         }}>Places to See</h2>
                     </Col>
                     <Col>
-                        <h2 className='navOptions'>Book Trip</h2>
+                        <h2 className='navOptions' onClick={()=>{
+                            window.location.assign('/travel')
+                        }}>Travel</h2>
                     </Col>
                     <Col>
                         <h2 className='navOptions'>Contact</h2>
