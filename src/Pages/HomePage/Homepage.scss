@@ -92,3 +92,46 @@
     width: 400px;
     aspect-ratio: 16/9;
 }
+
+@media screen and (max-width:1650px) {
+    .aboutCard{
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .homeImg{
+        height: 300px;
+    }
+    .imgBlackout{
+        height: 300px;
+    }
+    .AboutDiv{
+        margin-top: 180px;
+    }
+    .titleBox{
+        margin-top: 40px;
+    }
+    .aboutCat{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .titleBox{
+        font-size: 60px;
+        width: 100%;
+    }
+    .bottomAboutImg{
+        width: 200px;
+    }
+    .bottomImgBlackout{
+        width: 200px;
+    }
+    .aboutCard{
+        width: 200px;
+    }
+}
