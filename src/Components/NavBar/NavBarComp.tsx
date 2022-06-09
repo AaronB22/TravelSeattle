@@ -1,15 +1,33 @@
-import type { FC } from 'react';
+import type { Dispatch, FC } from 'react';
 import { Navbar,Row, Col} from "react-bootstrap";
 import './NavBarComp.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
-const NavbarComp: FC=()=>{
+ interface openMenus {
+    classStatus:string;
+}
 
+const NavbarComp: FC  =()=>{
+
+    const [menuStatus, setMenuStatus]= useState('closedMenu');
+    const [blackOut, setBlackOut]= useState('noBlackout')
+    
     return(
+        <>
         <Navbar expand='lg'  className='Navbar backgroundImgNav'>
             <Navbar.Brand className="header">
-                <FontAwesomeIcon icon={faBars}  className='hamMenu fa-2xl'/>
+                <FontAwesomeIcon icon={faBars} onClick={()=>{
+                    if(menuStatus==='closedMenu'){
+                        setMenuStatus('openMenu')
+                        setBlackOut('screenBlackOut')
+                    }
+                    else {
+                        setBlackOut('noBlackout')
+                        setMenuStatus('closedMenu')
+                    }                    
+                }}  className='hamMenu fa-2xl'/>
                 <h1 className='navTitle'>
                     Travel Seattle
                 </h1>
@@ -37,6 +55,15 @@ const NavbarComp: FC=()=>{
                 </Row>
             </Navbar.Brand>
         </Navbar>
+        <div className={blackOut} ></div>
+        <div className={menuStatus}>
+            <h2 className='openMenuText'>About</h2>
+            <h2 className='openMenuText'>Sights</h2>
+            <h2 className='openMenuText'>Travel</h2>
+
+        </div>
+        
+        </>
        
     )
 }
