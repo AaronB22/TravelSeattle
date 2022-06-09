@@ -14,7 +14,12 @@ const NavbarComp: FC=()=>{
             <Navbar.Brand className="opHeader">
                 <Row>
                     <Col>
-                        <h2 className='navOptions'>About Seattle</h2>
+                        <h2 className='navOptions' >
+                            <a href='#about' className='navLink'>
+                                About Seattle
+
+                            </a>
+                            </h2>
                     </Col>
                     <Col>
                         <h2 className='navOptions'>Places to See</h2>

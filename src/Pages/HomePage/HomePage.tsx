@@ -14,7 +14,7 @@ const HomePage:FC=()=>{
                     Seattle Awaits You
                 </div>
             </div>
-            <div className='AboutDiv'>
+            <div className='AboutDiv about' id='about'>
                 <h2 className='aboutTitle'>About Seattle</h2>
 
                 <div className='subTitle'>Welcome to one of the most beatiful and adventurous cities in the world!</div>

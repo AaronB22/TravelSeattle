@@ -28,6 +28,16 @@
 .navOptions:hover{
     font-style: italic;
     text-decoration: underline;
+    color: $primary-color;
+}
+
+.navLink{
+    color: white;
+    text-decoration:  none;
+}
+
+.navLink:hover{
+    color: $primary-color;
 }
 
 @media screen and (max-width:800px) {
