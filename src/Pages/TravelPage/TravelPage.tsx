@@ -65,6 +65,30 @@ const TravelPage:FC=()=>{
                         </Col>
                     </Row>
                 </div>
+                <div>
+                <h2 className='TravelCatHeader'>Local Travel</h2>
+                <Row>
+                        <Col>
+                            <Card className='travelCard'>
+                                <h3 className='travelSubHeader'>Link Light Rail</h3>
+                                <img src={require('../../assets/lightrail.jpg')} className='cardImg' alt='Amtrak Train in the snow'/>
+                                <div className='travelText'>
+                                    Link Light Rail is Seattle's lightrail service. Providing service from Sea-Tac Airport to the City! With up to 25 stations and more coming every year, the lightrail is a great way to get around the city
+                                </div>
+                            </Card>
+                        
+                        </Col>
+                        <Col>
+                        <Card className='travelCard'>
+                                <h3 className='travelSubHeader'>Bus Service</h3>
+                                <img src={require('../../assets/Bus.jpg')} className='cardImg' alt='Amtrak Train in the snow'/>
+                                <div className='travelText'>
+                                   Seattle has one of the best bus services in the country! Busses can take you to all the major spots of Seattle! Connecting you from lightrail stations to major points of interests all across the city.
+                                </div>
+                            </Card>
+                        </Col>
+                    </Row>
+                </div>
             </div>
             <Footer/>
         </>
