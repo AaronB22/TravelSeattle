@@ -15,14 +15,16 @@ const NavbarComp: FC=()=>{
                 <Row>
                     <Col>
                         <h2 className='navOptions' >
-                            <a href='#about' className='navLink'>
+                            <a href='/#about' className='navLink'>
                                 About Seattle
 
                             </a>
                             </h2>
                     </Col>
                     <Col>
-                        <h2 className='navOptions'>Places to See</h2>
+                        <h2 className='navOptions' onClick={()=>{
+                            window.location.assign('/sights')
+                        }}>Places to See</h2>
                     </Col>
                     <Col>
                         <h2 className='navOptions'>Book Trip</h2>
