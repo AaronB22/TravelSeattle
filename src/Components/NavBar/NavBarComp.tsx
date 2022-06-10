@@ -31,7 +31,7 @@ const NavbarComp: FC  =()=>{
                         setNavIcon(faBars)
                     }                    
                 }}  className='hamMenu fa-2xl'/>
-                <h1 className='navTitle'>
+                <h1 className='navTitle' onClick={()=>window.location.assign('/home')}>
                     Travel Seattle
                 </h1>
             </Navbar.Brand>
