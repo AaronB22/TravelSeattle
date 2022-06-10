@@ -49,3 +49,9 @@
         background-color: whitesmoke !important;
     }
 }
+
+@media screen and (max-width:1000px) {
+    .sightCard{
+        width: 100%;
+    }
+}
