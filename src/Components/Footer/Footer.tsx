@@ -11,7 +11,7 @@ const Footer:FC=()=>{
                 This website is a demonstration project by Aaron Bailey
             </div>
             <div className='logoDiv'>
-                <Row>
+                <Row className='iconRow'>
                     <Col>
                         <img src={require('../../assets/GitHubLogo.png')} className='pointer' onClick={()=>{
                             window.location.assign('https://github.com/AaronB22')

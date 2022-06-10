@@ -26,3 +26,15 @@
 .pointer{
     cursor: pointer;
 }
+
+@media screen and (max-width: 350px){
+    .iconRow{
+        width: 100px;
+    }
+    .Footer{
+        height: 250px;
+    }
+    .logoDiv{
+        margin-top: 10px;
+    }
+}
