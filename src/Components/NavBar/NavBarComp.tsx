@@ -60,9 +60,9 @@ const NavbarComp: FC  =()=>{
         </Navbar>
         <div className={blackOut} ></div>
         <div className={menuStatus}>
-            <h2 className='openMenuText'>About</h2>
-            <h2 className='openMenuText'>Sights</h2>
-            <h2 className='openMenuText'>Travel</h2>
+            <h2 className='openMenuText' onClick={()=>{window.location.assign('/#about')}}>About</h2>
+            <h2 className='openMenuText' onClick={()=>{window.location.assign('/sights')}}>Sights</h2>
+            <h2 className='openMenuText' onClick={()=>{window.location.assign('/travel')}}>Travel</h2>
 
         </div>
         
