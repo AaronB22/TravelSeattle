@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import type { FC } from 'react';
 import { BrowserRouter as Router} from 'react-router-dom'
 import CustomRouter from './CustomRouter';
@@ -9,15 +9,19 @@ import './MainTheme.scss'
 
 
 const App: FC=()=>{
+
+  const [popout, setPopout]= useState('popout')
     return(
       <>
        <NavBarComp/>
        <Router>
           <CustomRouter/>
-          <div className='popout'>
+          <div className={popout}>
             <div className='mainpopout'>
               <h2 className='popoutTitle'>This is a demo website</h2>
-              <button className='closedPopoutBtn'>X</button>
+              <button className='closedPopoutBtn' onClick={()=>{
+                setPopout('closedPopout')
+              }}>X</button>
               <p>This webshite is made by Aaron Bailey as a demo website project. Checkout the code here:<a href='https://github.com/AaronB22/CompanyPageProj' >https://github.com/AaronB22/CompanyPageProj</a></p>
             </div>
 
