@@ -48,10 +48,19 @@
         margin-bottom: 20px;
         background-color: whitesmoke !important;
     }
+    .cardImgs{
+        width: 399px;
+    }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:410px) {
+    .contentDiv{
+        margin-top: 200px;
+    }
+    .cardImgs{
+        width:250px;
+    }
     .sightCard{
-        width: 100%;
+        width: 251px;
     }
 }
