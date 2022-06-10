@@ -19,7 +19,9 @@ const TravelPage:FC=()=>{
                     <h2 className='TravelCatHeader'>Airports</h2>
                     <Row>
                         <Col>
-                            <Card className='travelCard'>
+                            <Card className='travelCard' onClick={()=>{
+                            window.location.assign('https://www.portseattle.org/sea-tac')
+                        }}>
                                 <h3 className='travelSubHeader'>Seattle Tacoma International Airport</h3>
                                 <img src={require('../../assets/SEA.jpg')} className='cardImg' alt= ' Seattle Tacoma International from the air'/>
                                 <div className='travelText'>
@@ -29,7 +31,9 @@ const TravelPage:FC=()=>{
                         
                         </Col>
                         <Col>
-                            <Card className='travelCard'>
+                            <Card className='travelCard' onClick={()=>{
+                            window.location.assign('https://www.painefield.com/')
+                        }}>
                                 <h3 className='travelSubHeader'>Paine Field</h3>
                                 <img src={require('../../assets/Paine_Field.jpg')} className='cardImg' alt='Paine Field from the air'/>
                                 <div className='travelText'>
@@ -44,7 +48,9 @@ const TravelPage:FC=()=>{
                 <h2 className='TravelCatHeader'>Ground Travel</h2>
                 <Row>
                         <Col>
-                            <Card className='travelCard'>
+                            <Card className='travelCard' onClick={()=>{
+                            window.location.assign('https://www.amtrak.com/stations/sea')
+                        }}>
                                 <h3 className='travelSubHeader'>Amtrak</h3>
                                 <img src={require('../../assets/amtrak.jpg')} className='cardImg' alt='Amtrak Train in the snow'/>
                                 <div className='travelText'>
@@ -54,7 +60,9 @@ const TravelPage:FC=()=>{
                         
                         </Col>
                         <Col>
-                        <Card className='travelCard'>
+                        <Card className='travelCard' onClick={()=>{
+                            window.location.assign('https://wsdot.com/Travel/Real-time/Map/')
+                        }}>
                                 <h3 className='travelSubHeader'>Interstates</h3>
                                 <img src={require('../../assets/I90.jpg')} className='cardImg' alt='I-90 goive over Lake Washingtion'/>
                                 <div className='travelText'>
@@ -69,7 +77,9 @@ const TravelPage:FC=()=>{
                 <h2 className='TravelCatHeader'>Local Travel</h2>
                 <Row>
                         <Col>
-                            <Card className='travelCard'>
+                            <Card className='travelCard' onClick={()=>{
+                            window.location.assign('https://www.soundtransit.org/ride-with-us/routes-schedules/1-line?direction=0&at=1654758000000&view=table&route_tab=schedule&stops_0=1_990006%2C1_99913&stops_1=1_99914%2C1_990005')
+                        }}>
                                 <h3 className='travelSubHeader'>Link Light Rail</h3>
                                 <img src={require('../../assets/lightrail.jpg')} className='cardImg' alt='Amtrak Train in the snow'/>
                                 <div className='travelText'>
@@ -79,7 +89,9 @@ const TravelPage:FC=()=>{
                         
                         </Col>
                         <Col>
-                        <Card className='travelCard'>
+                        <Card className='travelCard' onClick={()=>{
+                            window.location.assign('https://kingcounty.gov/depts/transportation/metro/travel-options/bus.aspx')
+                        }}>
                                 <h3 className='travelSubHeader'>Bus Service</h3>
                                 <img src={require('../../assets/Bus.jpg')} className='cardImg' alt='Amtrak Train in the snow'/>
                                 <div className='travelText'>
