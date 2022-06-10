@@ -13,19 +13,22 @@ const NavbarComp: FC  =()=>{
 
     const [menuStatus, setMenuStatus]= useState('closedMenu');
     const [blackOut, setBlackOut]= useState('noBlackout')
+    const [navIcon,setNavIcon]= useState(faBars)
     
     return(
         <>
         <Navbar expand='lg'  className='Navbar backgroundImgNav'>
             <Navbar.Brand className="header">
-                <FontAwesomeIcon icon={faBars} onClick={()=>{
+                <FontAwesomeIcon icon={navIcon} onClick={()=>{
                     if(menuStatus==='closedMenu'){
                         setMenuStatus('openMenu')
                         setBlackOut('screenBlackOut')
+                        setNavIcon(faX)
                     }
                     else {
                         setBlackOut('noBlackout')
                         setMenuStatus('closedMenu')
+                        setNavIcon(faBars)
                     }                    
                 }}  className='hamMenu fa-2xl'/>
                 <h1 className='navTitle'>
