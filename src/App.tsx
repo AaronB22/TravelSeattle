@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import type { FC } from 'react';
 import { BrowserRouter as Router} from 'react-router-dom'
 import CustomRouter from './CustomRouter';
@@ -10,7 +10,13 @@ import './MainTheme.scss'
 
 const App: FC=()=>{
 
-  const [popout, setPopout]= useState('popout')
+  const [popout, setPopout]= useState('closedPopout')
+  useEffect(()=>{
+    if(window.location.pathname==='/' && window.location.hash!== '#about'){
+      setPopout('popout')
+    }
+  },[setPopout])
+
     return(
       <>
        <NavBarComp/>
@@ -22,7 +28,7 @@ const App: FC=()=>{
               <button className='closedPopoutBtn' onClick={()=>{
                 setPopout('closedPopout')
               }}>X</button>
-              <p>This webshite is made by Aaron Bailey as a demo website project. Checkout the code here:<a href='https://github.com/AaronB22/CompanyPageProj' >https://github.com/AaronB22/CompanyPageProj</a></p>
+              <p>This website is made by Aaron Bailey as a demo website project. Checkout the code here:<a href='https://github.com/AaronB22/CompanyPageProj' >https://github.com/AaronB22/CompanyPageProj</a></p>
             </div>
 
             </div>
